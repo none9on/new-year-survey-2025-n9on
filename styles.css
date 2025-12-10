@@ -1,0 +1,235 @@
+:root{
+    --text-color: black;
+    --link-color: pink;
+    --background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+a{
+  text-decoration: none; 
+  color: var(--text-color); 
+}
+
+a:hover{
+    color: var(--link-color);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 20px 70px;
+
+}
+
+.greeting{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.greet-set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    height: 90vh;
+}
+
+
+/* .greeting{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+} */
+.greeting-pic{
+    height: 500px;
+    margin-top: 10px; 
+    
+}
+
+.greeting-text{
+    font-size: 100px;
+    transition: transform 0.2s;
+}
+
+.greeting-text:hover{
+    transform: scale(1.2);
+}
+
+
+.site_desc{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.desc-text{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-weight: 450;
+    font-size: 25px;
+}
+
+.survey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name, .age, .films, .sad-film, .shows, .artists, .songs, .line, .crash, .books, .meme, .cofee, .place, .sweet, .thought, .hobby, .throw, .happy, .sad, .moment, .friends{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input[type=text]:focus {
+  border: 1px solid #555;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
+
+input[type=number]:focus {
+  border: 1px solid #555;
+}
+
+.previous{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+}
+.previous-text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width: 768px){
+    header{
+    gap: 10px;
+}
+.greet-set{
+    flex-direction: column;
+    gap: 50px;
+}
+/* .greeting{
+    height: 60vh;
+} */
+.greeting-pic{
+    height: 300px;
+}
+.greeting-text{
+    font-size: 70px;
+}
+
+}
+
+@media(max-width: 540px){
+    header{
+    gap: 10px;
+     margin: 30px 20px;
+
+}
+.greet-set{
+    flex-direction: column;
+    gap: 100px;
+}
+.greeting-pic{
+    height: 280px;
+}
+.greeting-text{
+    font-size: 50px;
+}
+.contacts{
+    gap: 50px;
+}
+}
+
+@media(max-width: 380px){
+    header{
+    gap: 5px;
+     margin: 10px 10px;
+}
+.greet-set{
+    flex-direction: column;
+    gap: 100px;
+}
+.greeting-pic{
+    height: 210px;
+}
+.greeting-text{
+    font-size: 40px;
+}
+.greeting{
+    height: 100vh;
+}
+.contacts{
+    gap: 50px;
+}
+.des{
+    display: none;
+}
+
+.cont{
+    display: none;
+}
+.survey{
+    margin: 30px;
+}
+}
