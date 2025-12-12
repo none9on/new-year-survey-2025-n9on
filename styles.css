@@ -4,6 +4,9 @@
     --background-color: white;
     --button-color: black;
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 * {
     margin: 0;
