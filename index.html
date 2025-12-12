@@ -13,8 +13,7 @@
 </head>
 <body>
     <div class="container">
-  <header>
-            <div class="home">
+            <!-- <div class="home">
                 <a class="logo-text" href="#">nys</a>
             </div>
             <div class="des">
@@ -24,12 +23,31 @@
                 <a href="#serv">анкета</a>
             </div>
             <div class="prev">
-                <a href="#prev">прошлые года</a>
+                <a href="#prev">прошлые анкеты</a>
             </div>
             <div class="cont">
-               <a href="#cont">контакты</a>
-            </div>
-        </header>
+               <a href="#cont">none9on</a>
+            </div> -->
+       <nav>
+        <ul class="side-bar">
+             <li onclick=hideSidebar()><a href="#"><img src="images/close.svg" alt="close"></a></li>
+            <li><a href="#desc">о проекте</a></li>
+            <li><a href="#serv">анкета</a></li>
+            <li><a href="#prev">прошлые анкеты</a></li>
+            <li><a href="#cont">none9on</a></li>
+           
+        </ul>
+        <ul class="nav-links">
+            <li><a href="#">nys</a></li>
+            <li class="hideOnMobile"><a href="#desc">о проекте</a></li>
+            <li class="hideOnMobile"><a href="#serv">анкета</a></li>
+            <li class="hideOnMobile"><a href="#prev">прошлые анкеты</a></li>
+            <li class="hideOnMobile"><a href="#cont">none9on</a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href="#"><img src="images/menu.svg" alt="menu"></a></li>
+        </ul>
+       </nav>
+            
+
     
 <div class="greeting" id="greeting">
   
@@ -80,33 +98,31 @@
           id="survey-form">
 
         <input type="hidden" name="access_key" value="71804806-8962-4580-8715-be0658f72973">
-
-
-
-        <div class="name"> <label for="name">Имя</label><input type="text" id="name" name="name" size="20"> </div>
-        <div class="age"> <label for="age">Возраст</label> <input type="text" id="age" name="age" size="20"> </div>
-        <div class="films"> <label for="films">Фильмы 2025</label> <input type="text" id="films" name="films" size="20"> </div>
-        <div class="sad-film"> <label for="sad-film">Самый грустный фильм этого года</label> <input type="text" id="sad-film" name="sad-film" size="20"> </div>
-        <div class="shows"> <label for="shows">Сериалы 2025</label> <input type="text" id="shows" name="shows" size="20"> </div>
-        <div class="artists"> <label for="artists">Музыкальные исполнители 2025</label> <input type="text" id="artists" name="artists" size="20"> </div>
-        <div class="songs"> <label for="songs">Лбимые песни</label> <input type="text" id="songs" name="songs" size="20"> </div>
-        <div class="line"> <label for="line">Любимая строчка из песни</label> <input type="text" id="line" name="line" size="20"> </div>
-        <div class="crash"> <label for="crash">Краш/крашиха года</label> <input type="text" id="crash" name="crash" size="20"> </div>
-        <div class="books"> <label for="books">Книги года</label> <input type="text" id="books" name="books" size="20"> </div>
-        <div class="meme"> <label for="meme">Мем года</label> <input type="text" id="meme" name="meme" size="20"> </div>
-        <div class="coffee"> <label for="coffee">Ваш заказ в кофейне</label> <input type="text" id="coffee" name="coffee" size="20"> </div>
-        <div class="place"> <label for="place">Место года</label> <input type="text" id="place" name="place" size="20"> </div>
-        <div class="sweet"> <label for="sweet">Сладость года</label> <input type="text" id="sweet" name="sweet" size="20"> </div>
-        <div class="thought"> <label for="thought">Мысль года</label> <input type="text" id="thought" name="thought" size="20"> </div>
-        <div class="hobby"> <label for="hobby">Новые хобби в этом году?</label> <input type="text" id="hobby" name="hobby" size="20"> </div>
-        <div class="throw"> <label for="throw">От чего бы хотели избавиться в следующем году?</label> <input type="text" id="throw" name="throw" size="20"> </div>
-        <div class="happy"> <label for="happy">Что делало вас счастливыми в этом году</label> <input type="text" id="happy" name="happy" size="20"> </div>
-        <div class="sad"> <label for="sad">От чего вам было грустно</label> <input type="text" id="sad" name="sad" size="20"> </div>
-        <div class="moment"> <label for="moment">Момент, заповнившийся больше всего в этом году</label> <input type="text" id="moment" name="moment" size="20"> </div>
-        <div class="sleep"> <label for="sleep">Сон года</label> <input type="text" id="sleep" name="sleep" size="20"> </div>
-        <div class="dish"> <label for="dish">Блюдо года</label> <input type="text" id="dish" name="dish" size="20"> </div>
-        <div class="hero"> <label for="hero">Героем какого фильма вы бы хотели стать</label> <input type="text" id="hero" name="hero" size="20"> </div>
-        <div class="infp"> <label for="infp">Ваш тип личности</label> <input type="text" id="infp" name="infp" size="20"> </div>
+        
+        <div class="name"> <label for="name">Имя</label><input type="text" id="name" name="name"> </div>
+        <div class="age"> <label for="age">Возраст</label> <input type="text" id="age" name="age"> </div>
+        <div class="films"> <label for="films">Фильмы 2025</label> <input type="text" id="films" name="films"> </div>
+        <div class="sad-film"> <label for="sad-film">Самый грустный фильм этого года</label> <input type="text" id="sad-film" name="sad-film"> </div>
+        <div class="shows"> <label for="shows">Сериалы 2025</label> <input type="text" id="shows" name="shows"> </div>
+        <div class="artists"> <label for="artists">Музыкальные исполнители 2025</label> <input type="text" id="artists" name="artists"> </div>
+        <div class="songs"> <label for="songs">Лбимые песни</label> <input type="text" id="songs" name="songs"> </div>
+        <div class="line"> <label for="line">Любимая строчка из песни</label> <input type="text" id="line" name="line"> </div>
+        <div class="crash"> <label for="crash">Краш/крашиха года</label> <input type="text" id="crash" name="crash"> </div>
+        <div class="books"> <label for="books">Книги года</label> <input type="text" id="books" name="books"> </div>
+        <div class="meme"> <label for="meme">Мем года</label> <input type="text" id="meme" name="meme"> </div>
+        <div class="coffee"> <label for="coffee">Ваш заказ в кофейне</label> <input type="text" id="coffee" name="coffee"> </div>
+        <div class="place"> <label for="place">Место года</label> <input type="text" id="place" name="place"> </div>
+        <div class="sweet"> <label for="sweet">Сладость года</label> <input type="text" id="sweet" name="sweet"> </div>
+        <div class="thought"> <label for="thought">Мысль года</label> <input type="text" id="thought" name="thought"> </div>
+        <div class="hobby"> <label for="hobby">Новые хобби в этом году?</label> <input type="text" id="hobby" name="hobby"> </div>
+        <div class="throw"> <label for="throw">От чего бы хотели избавиться в следующем году?</label> <input type="text" id="throw" name="throw"> </div>
+        <div class="happy"> <label for="happy">Что делало вас счастливыми в этом году</label> <input type="text" id="happy" name="happy"> </div>
+        <div class="sad"> <label for="sad">От чего вам было грустно</label> <input type="text" id="sad" name="sad"> </div>
+        <div class="moment"> <label for="moment">Момент, заповнившийся больше всего в этом году</label> <input type="text" id="moment" name="moment"> </div>
+        <div class="sleep"> <label for="sleep">Сон года</label> <input type="text" id="sleep" name="sleep"> </div>
+        <div class="dish"> <label for="dish">Блюдо года</label> <input type="text" id="dish" name="dish"> </div>
+        <div class="hero"> <label for="hero">Героем какого фильма вы бы хотели стать</label> <input type="text" id="hero" name="hero"> </div>
+        <div class="infp"> <label for="infp">Ваш тип личности</label> <input type="text" id="infp" name="infp"> </div>
        
         <!-- <form>
             <label for="city-select">Кофе или чай</label>
@@ -117,26 +133,25 @@
         </form> -->
 
 
-        <div class="attention"><p>* Отправляя данную анкету, Вы соглашаетесь с тем, что данные этого опроса могут быть выложены в мой тгк в виде ссылки. Также Github Pages является публичным сайтом, поэтому, пожалуйста,
-            не оставляйте в анкете свои личные данные, которые можно использовать в злых целях.</p>
+        <div class="attention"><p>* Нажимая на кнопку "Отправить", Вы соглашаетесь с размещением результатов данной анкеты в моем тгк!</p>
         </div>
             <button type="submit">Отправить</button>
         </form>
     </div>
 
       <div class="previous" id="prev">
+        <div class="prev-t">
         <h2 class="previous-text">
-            
-        Вспомнить это работает или нет билн какими вы были в прошлых годах можно по <a href="">данной ссылке на Яндекс Диск.</a> Там же я позже размещу результаты опросника этого года!
+       Всех с наступающим 2026 годом! Пусть в новом году вам этот мир будет уже абосолютно понятен и у вас будет покой, умиротворение, гармония и мирное небо над головой! Надеюсь 2026 принесет вам много ярких, приятных и счастливых эмоций! Предыдущие анкеты (за 2023 и 2024) можно посмотреть <a class="prev-l" href="https://disk.yandex.ru/d/SBkzY22tnpXXFg">по данной ссылке!</a> 
         </h2>
+        <!-- <a href="https://disk.yandex.ru/d/SBkzY22tnpXXFg"><button class="prev-but">Прошлые анкеты!</button></a> -->
+        </div>
+        <div class="prev-photo">
+            <img class="prev-pic" src="images/pr.jpeg" alt="previous">
+        </div>
     </div>
   <div class="contacts" id="cont">
         <h1 class="by">by none9on</h1>
-        <div class="links">
-            <a href="">Instagram</a>
-            <a href="">Tiktok</a>
-            <a href="">Telegram</a>
-        </div>
     </div>
     </div>
     <script src="form.js"></script>

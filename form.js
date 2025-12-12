@@ -51,3 +51,14 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
+
+function showSidebar() {
+    const sideBar = document.querySelector('.side-bar');
+    sideBar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sideBar = document.querySelector('.side-bar');
+    sideBar.style.display = 'none';
+}

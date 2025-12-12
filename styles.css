@@ -2,6 +2,7 @@
     --text-color: black;
     --link-color: pink;
     --background-color: white;
+    --button-color: black;
 }
 
 * {
@@ -36,10 +37,55 @@ header{
     gap: 30px;
     justify-content: space-between;
     margin: 20px 70px;
-   
-
 }
 
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+   padding: 10px;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* nav li:first-child{
+    margin-right: auto;
+} */
+
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar li{
+    width: 100%;
+}
+.side-bar a{
+    width: 100%;
+}
+.menu-btn{
+    display: none;
+}
 
 .greeting{
     display: flex;
@@ -162,6 +208,13 @@ header{
     justify-content: center;
     align-items: center;
 }
+.survey-questions{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    
+}
 
 .name, .age, .films, .sad-film, .shows, .artists, .songs, .line, .crash, .books, .meme, .cofee, .place, .sweet, .thought, .hobby, .throw, .happy, .sad, .moment, .friends, 
 .sleep, .hero, .infp{
@@ -186,23 +239,23 @@ input[type=text]:focus {
     border-bottom: 1px solid #555;
     outline: none;
 }
-/* 
-input[type=number] {
-  width: 100%;
-  padding: 8px;
-  margin: 10px 0;
-  box-sizing: border-box;
-  background-clip: padding-box;
-  border: none;
-   border-bottom: 1px solid #555;
-  
-}
 
-input[type=number]:focus {
-  border: 1px solid #555;
-   border-bottom: 1px solid #555;
-    outline: none;
-} */
+button{
+    align-self: center;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 35px;
+    border: none;
+    margin-top: 50px;
+}
+button:hover{
+    background-color: var(--link-color);
+    color: var(--text-color);
+}
 
 .previous{
     display: flex;
@@ -210,11 +263,24 @@ input[type=number]:focus {
     justify-content: center;
     height: 100vh;
     padding: 50px;
+    gap: 100px;
 }
 .previous-text{
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     font-size: 25px;
+}
+
+.prev-t{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-pic{
+    height: 600px;
 }
 
 .contacts{
@@ -231,27 +297,47 @@ input[type=number]:focus {
     flex-direction: column;
 }
 .attention{
-width: 350px;
+width: 100%;
 }
 
-button{
-    height: 30px;
-    width: 100px;
-    margin: 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
+
+.prev-but{
     cursor: pointer;
+    border-radius: 20px;
+    height: 40px;
+    width: 160px;
+    border: none;
+    font-size: 16px;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: 500;
+
+}
+.prev-but:hover{
+    background-color: var(--link-color);
+    color: black;
 }
 
-button:hover{
-    background-color: #555;
+.prev-l{
+    color: pink;
 }
 
-@media(max-width: 768px){
+.prev-l:hover{
+    color: black;
+}
+
+
+.by{
+    font-weight: 400;
+}
+
+
+
+
+
+@media(max-width: 800px){
     header{
-    gap: 10px;
+    gap: 5px;
 }
 .greet-set{
     flex-direction: column;
@@ -269,13 +355,38 @@ button:hover{
 .desc-img1, .desc-img2, .desc-img3{
     display: none;
 }
+/* .survey{
+    margin: 5px;
+} */
+.survey-questions{
+    width: 80%;
+}
+.previous{
+    flex-direction: column-reverse;
+    height: auto;
+}
+.prev-pic{
+    height: 400px;
+}
+
+.hideOnMobile{
+    display: none;
+}
+.menu-btn{
+    display: block;
+}
 
 }
 
+
+
+
+
+
 @media(max-width: 540px){
     header{
-    gap: 10px;
-     margin: 30px 20px;
+    gap: 7px;
+     /* margin: 30px 20px; */
 
 }
 .greet-set{
@@ -297,12 +408,24 @@ button:hover{
 .desc-img5{
     transform: rotate(7deg);
 }
+.side-bar{
+    width: 100%;
 }
+}
+
+
+
+
+
 
 @media(max-width: 380px){
     header{
     gap: 5px;
      margin: 10px 10px;
+}
+
+.survey-questions{
+    width: 96%;
 }
 .greet-set{
     flex-direction: column;
