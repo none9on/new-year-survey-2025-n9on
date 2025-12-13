@@ -1,6 +1,6 @@
 // Получаем форму и все поля
 const form = document.getElementById('survey-form');
-const inputs = form.querySelectorAll('input, select');
+const inputs = form.querySelectorAll('input, select, textarea');
 const submitBtn = form.querySelector('button[type="submit"]');
 
 // Восстанавливаем данные из localStorage при загрузке страницы

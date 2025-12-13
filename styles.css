@@ -32,6 +32,22 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
 }
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  resize: none; /* чтобы нельзя было растягивать */
+  font-family: inherit;
+  font-size: 16px;
+}
+
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #555;
+}
 
 
 header{
@@ -211,7 +227,7 @@ nav a{
 }
 
 .name, .age, .films, .sad-film, .shows, .artists, .songs, .line, .crash, .books, .meme, .cofee, .place, .sweet, .thought, .hobby, .throw, .happy, .sad, .moment, .friends, 
-.sleep, .hero, .infp{
+.sleep, .hero, .infp, .spowers, .dish{
     display: flex;
     flex-direction: column;
 }
