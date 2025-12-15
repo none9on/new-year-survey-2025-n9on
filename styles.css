@@ -363,17 +363,23 @@ width: 100%;
     }
     .desc-img1{
     display: none;
+    
 }
+
+
 }
 
 @media(max-width: 930px){
     .desc-img2{
     display: none;
 }
+.greeting-pic{
+        height: 350px;
+    }
+
 }
 
-
-@media(max-width: 800px){
+@media(max-width: 820px){
     header{
     gap: 5px;
 }
@@ -437,6 +443,10 @@ width: 100%;
 .greeting-text{
     font-size: 50px;
 }
+
+.survey-questions{
+    width: 70%;
+}
 .contacts{
     gap: 50px;
 }
@@ -485,7 +495,12 @@ width: 100%;
 
 }
 
+@media(max-width: 412px){
+    .greeting-pic{
+        height: 220px;
+    }
 
+}
 
 
 
@@ -532,32 +547,9 @@ width: 100%;
 
 
 .mobile-stack {
-        position: relative;
-        width: 250px;
-        height: 350px;
-        margin: 0 auto;
+       display: block;
     }
 
-    .mobile-stack img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 250px;
-        height: 350px;
-        object-fit: cover;
-        cursor: pointer;
-        object-fit: contain;
-
-        /* Плавная анимация */
-        transition: transform 0.4s ease, opacity 0.3s;
-    }
-
-    /* Разные наклоны — как у тебя */
-    .mobile-stack img:nth-child(1) { transform: rotate(-6deg); }
-    .mobile-stack img:nth-child(2) { transform: rotate(7deg); }
-    .mobile-stack img:nth-child(3) { transform: rotate(-4deg); }
-    .mobile-stack img:nth-child(4) { transform: rotate(5deg); }
-    .mobile-stack img:nth-child(5) { transform: rotate(-3deg); }
 
 
 }

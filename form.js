@@ -1,24 +1,23 @@
-// Получаем форму и все поля
 const form = document.getElementById('survey-form');
 const inputs = form.querySelectorAll('input, select, textarea');
 const submitBtn = form.querySelector('button[type="submit"]');
 
-// Восстанавливаем данные из localStorage при загрузке страницы
+
 inputs.forEach(input => {
     const savedValue = localStorage.getItem(input.name);
     if (savedValue) {
         input.value = savedValue;
     }
 
-    // Сохраняем данные в localStorage при каждом изменении
+    
     input.addEventListener('input', () => {
         localStorage.setItem(input.name, input.value);
     });
 });
 
-// Обработка отправки формы
+
 form.addEventListener('submit', async (e) => {
-    e.preventDefault(); // отменяем стандартную отправку
+    e.preventDefault(); 
 
     const formData = new FormData(form);
 
@@ -38,7 +37,7 @@ form.addEventListener('submit', async (e) => {
             alert("Анкета отправлена! Спасибо!");
             form.reset();
 
-            // очищаем localStorage для всех полей формы
+            
             inputs.forEach(input => localStorage.removeItem(input.name));
         } else {
             alert("Ошибка: " + data.message);
