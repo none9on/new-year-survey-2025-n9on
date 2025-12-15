@@ -13,21 +13,6 @@
 </head>
 <body>
     <div class="container">
-            <!-- <div class="home">
-                <a class="logo-text" href="#">nys</a>
-            </div>
-            <div class="des">
-                <a href="#desc">о проекте</a>
-            </div>
-            <div class="surv">
-                <a href="#serv">анкета</a>
-            </div>
-            <div class="prev">
-                <a href="#prev">прошлые анкеты</a>
-            </div>
-            <div class="cont">
-               <a href="#cont">none9on</a>
-            </div> -->
        <nav>
         <ul class="side-bar">
              <li onclick=hideSidebar() class="close"><a href="#"><img src="images/close.svg" alt="close"></a></li>
@@ -99,6 +84,8 @@
 
         <input type="hidden" name="access_key" value="046ab3ea-c2ac-4eee-a29d-da90b2750ab1">
         
+        <div class="form-part" id="part1">
+        
         <div class="name"> <label for="name">Имя</label><input placeholder="ксюша" type="text" id="name" name="name"> </div>
         <div class="age"> <label for="age">Возраст</label> <input placeholder="22" type="text" id="age" name="age"> </div>
         <div class="films"> <label for="films">Фильмы 2025</label> <textarea placeholder="superman, wolfwalkers, perfect blue, lisa frankenstein, хорошо быть тихоней, mysterious skin, little miss sushine, atonoment, how to lose a guy in 10 days, 10 things i hate about you, boyhood, humanist vampire seeking consenting suicidal person, cars" id="films" name="films" rows="4" cols="40"></textarea></div>
@@ -111,6 +98,11 @@
         <div class="books"> <label for="books">Любимая книга</label> <textarea placeholder="по-прежнему моя любимая книга это убить пересмешника, но из прочитанного мной в этом году я бы выделила нагори: тоска по уходящему сезону и грозовой перевал" id="books" name="books"  rows="4" cols="40"></textarea></div>
         <div class="meme"> <label for="meme">Мем года</label> <textarea placeholder="мне нравится звук в тт юлка може i пиздила гроши але i людям давала пиздити i жили нармальна" id="meme" name="meme"></textarea></div>
         <div class="coffee"> <label for="coffee">Ваш заказ в кофейне</label> <textarea placeholder="латте с мятным сиропом, эспрессо-тоник и бамбл" id="coffee" name="coffee"  rows="4" cols="40"></textarea></div>
+         <button type="button" class="next-btn" data-next="part2">Далее</button>
+    </div>
+      
+      
+      <div class="form-part" id="part2"  style="display:none;">
         <div class="place"> <label for="place">Место года</label> <textarea placeholder="ну тут не поспоришь грузия" id="place" name="place"></textarea> </div>
         <div class="sweet"> <label for="sweet">Сладость года</label> <textarea placeholder="в кб продаются турецкие шоколадки лавива (только не с темной начинкой, а с белой!)" id="sweet" name="sweet"></textarea></div>
          <div class="thought"> <label for="thought">Мысль года</label> <textarea placeholder="нужно полагаться только на себя и когда уже станет лучше извините это крик души" id="thought" name="thought" rows="4" cols="40"></textarea></div>
@@ -123,6 +115,11 @@
         <div class="sleep"> <label for="sleep">Самый странный сон года</label> <textarea placeholder="прямая цитата из папки с заметками моих снов 10 апреля: мы были в баре я пошла в туалет, он был очень маленький и там на полках лежали какие-то препараты с российскими старыми певицами и всё было на китайском и это были таблетки от глистов" id="sleep" name="sleep" rows="4" cols="40"></textarea></div>
         <div class="spowers"> <label for="spowers">Какие суперсилы вы бы хотели иметь</label> <textarea placeholder="телепортация: никаких виз никаких перелетов, секунда и ты уже в другом месте" id="spowers" name="spowers" rows="4" cols="40"></textarea></div>
         <div class="dish"> <label for="dish">Блюдо года</label> <textarea placeholder="хачапури по аджарски в той кафешке в батуми я отвечаю у меня случился оргазм буквально от одного куска" id="dish" name="dish"></textarea></div>
+            <button type="button" class="next-btn" data-next="part3">Далее</button>
+    </div>
+
+         <div class="form-part" id="part3"  style="display:none;">
+
         <div class="trop"> <label for="trop">Ваш любимый троп</label> <textarea placeholder="так ну я точно люблю от enemies to lovers но чтобы реально был hate love, если про friends to lovers, но только если кто-то уже был влюбен, люблю университетские аушки, псевдоисторические сеттинги только если это что-то в духе бронте или джейн остен, И ДЕТЕКТИВЫ ЛЮБЛЮ  как же их люблю вы бы знали" id="trop" name="trop"></textarea></div>
         <div class="infp"> <label for="infp">Ваш тип личности</label> <textarea placeholder="в последний раз я была посредником - infp" id="infp" name="infp"></textarea></div>
         <div class="vids"> <label for="vids">Какие видео вы смотрите на ютубе</label> <textarea placeholder="видосы с йогой, правило 34, иногда стендапы, калинкина и касьян и еще слушаю хаус миксы от рандомных людей" id="vids" name="vids"  rows="4" cols="40"></textarea></div>
@@ -134,13 +131,17 @@
          <div class="island"> <label for="island">3 вещи, которые вы бы взяли на необитаемый остров</label> <textarea placeholder="сложный вопрос но кстати про сериалы я бы не хотела оказаться в шершнях (нуу не считая того что у них там очень привлекательная женская команда по футболу...)" id="island" name="island" rows="4" cols="40"></textarea></div>
          <div class="wish"> <label for="wish">Пожелание себе на 2026</label> <textarea placeholder="я желаю себе очень очень сильно покоя умиротворения удовлетворения и билетов на концик бантан" id="wish" name="wish" rows="4" cols="40"></textarea></div>
         <div class="rate"> <label for="rate">Оцениваем 2025 (шкалу придумайте сами)</label> <textarea placeholder="6 только из-за получения диплома грузии и турции" id="rate" name="rate"></textarea></div>
-        
+            <button type="submit">Отправить</button>
+        <div id="success-message" style="display:none; color:green; margin-top:10px;">
+            Спасибо! Ваша анкета отправлена.
+        </div>
+    </div>
         
     
 
-        <div class="attention"><p>* Нажимая на кнопку "Отправить", Вы соглашаетесь с размещением результатов данной анкеты в моем тгк!</p>
-        </div>
-            <button type="submit">Отправить</button>
+        <!-- <div class="attention"><p>* Нажимая на кнопку "Отправить", Вы соглашаетесь с размещением результатов данной анкеты в моем тгк!</p> -->
+       
+            <!-- <button type="submit">Отправить</button> -->
         </form>
     </div>
 
